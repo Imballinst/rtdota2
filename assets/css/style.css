@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+body {
+	font-weight: 400;
+}
+
+.cust-margin-top {
+	margin-top: 30px;
+}
+
+.intro-divider {
+	width: 600px;
+}
+
+/* Images */
+
+.img-logo {
+	margin-bottom: 15px;
+}
+
+.img-brand {
+	width: 25px;
+	height: 25px;
+}
+
+/* Section */
+
+.roster-section {
+	background-image: url('../img/roster-bg.jpg');
+	background-size: cover;
+	border-top: 3px dashed #0099FF;
+	border-bottom: 0;
+}
+
+.achs-section {
+	background-image: url('../img/ach-bg.jpg');
+	background-size: cover;
+	border-top: 3px dashed #0099FF;
+	border-bottom: 0;
+}
+
+.banner-section {
+	background-size: cover;
+	border-top: 3px dashed #0099FF;
+}
+
+/* Typography */
+
+.font-roboto {
+	font-family: 'Roboto Slab', serif;
+}
+
+.font-open-sans {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.achievement-title {
+	font-size: 20px;
+	font-family: 'Lobster', cursive;
+}
+
+.achievement-content {
+	font-size: 16px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.font-white {
+	color: #FFF;
+}
+
+/* HR */
+
+.sig-heroes {
+  border:none;
+  border-top:1px dotted #000;
+  background-color:#fff;
+  height:1px;
+  width:150px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Player Divs */
+
+.desc-active {
+	display: block;
+}
+
+.desc-hidden {
+	display: none;
+}
+
+.player-arrow:hover {
+	cursor: pointer;
+}
+
+/* Screen Compatibility */
+
+@media(max-width:1300px) {
+  .intro-divider {
+      width: 400px;
+  }
+}
+
+@media(max-width:767px) {
+  #pc-profile {
+  	display: none;
+  }
+  #mobile-profile {
+  	display: block;
+  }
+}
+
+@media(min-width:768px) {
+  #pc-profile {
+  	display: block;
+  }
+  #mobile-profile {
+  	display: none;
+  }
+}

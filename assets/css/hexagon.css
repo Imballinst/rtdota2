@@ -1,0 +1,138 @@
+.hexagon {
+  position: relative;
+  width: 75px; 
+  height: 43.30px;
+  margin: 21.65px 0;
+  background-size: auto 75.0555px;
+  background-position: center;
+  border-left: solid 5px #ffffff;
+  border-right: solid 5px #ffffff;
+}
+
+.hexTop,
+.hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 53.03px;
+  height: 53.03px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 5.98px;
+}
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 65.0000px;
+  height: 37.527767497325684px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-18.7639px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-18.7639px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-18.7639px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+
+.hexTop {
+  top: -26.5165px;
+  border-top: solid 7.0711px #ffffff;
+  border-right: solid 7.0711px #ffffff;
+}
+
+.hexTop:after {
+  background-position: center top;
+}
+
+.hexBottom {
+  bottom: -26.5165px;
+  border-bottom: solid 7.0711px #ffffff;
+  border-left: solid 7.0711px #ffffff;
+}
+
+.hexBottom:after {
+  background-position: center bottom;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 2.8868px;
+  left: 0;
+  width: 65.0000px;
+  height: 37.5278px;
+  z-index: 2;
+  background: inherit;
+}
+
+/* Hexagon Hovers */
+
+.hexagon:hover{
+  cursor: pointer;
+}
+
+/* Player Images */
+
+#kev {
+  background-image: url('../img/kev.jpg');
+}
+
+#rico {
+  background-image: url('../img/rico.jpg');
+}
+
+#davin {
+  background-image: url('../img/davin.jpg');
+  margin-left: -38px;
+}
+
+#aji {
+  background-image: url('../img/aji.jpg');
+  margin-left: 75px;
+  margin-top: -65px;
+}
+
+#tom {
+  background-image: url('../img/tom.jpg');
+  margin-left: -75px;
+  margin-top: -65px;
+}
+
+#ondy {
+  background-image: url('../img/ondy.jpg');
+  margin-left: 37px;
+  margin-top: -130px;
+}
+
+/* Screen Compatibility */
+
+@media (max-width:1199px) and (min-width:768px) {
+    #kev {
+      margin-left: 80px;
+    }
+
+    #rico {
+      margin-left: 80px;
+    }
+
+    #davin {
+      margin-left: 42px;
+    }
+
+    #aji {
+      margin-left: 155px;
+    }
+
+    #tom {
+      margin-left: 5px;
+    }
+
+    #ondy {
+      margin-left: 117px;
+    }
+}​
